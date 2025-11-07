@@ -8,16 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List {
+            Section(header: Text("Fruits")) {
+                Text("Apple")
+                Text("Banana")
+            }
+
+            Section(header: Text("Vegetables")) {
+                Text("Carrot")
+                Text("Broccoli")
+            }
+            Section("Books") {
+                Text("Dummy")
+                Text("Book")
+            }
         }
-        .padding()
-        
-        
     }
 }
 
